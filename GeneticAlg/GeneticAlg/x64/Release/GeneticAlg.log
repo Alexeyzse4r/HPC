@@ -1,0 +1,16 @@
+﻿  Compiling CUDA source file kernel.cu...
+  
+  C:\Users\faith\Documents\A_my_documents\Student\HPC\GeneticAlg\GeneticAlg>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v13.1\bin\nvcc.exe" -gencode=arch=compute_75,code=\"sm_75,compute_75\" --use-local-env -ccbin "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\bin\HostX86\x64" -x cu   -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v13.1\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v13.1\include"     --keep-dir x64\Release  -maxrregcount=0    --machine 64 --compile -cudart hybrid -std=c++17 -Xcompiler "/std:c++17"   -DWIN32 -DWIN64 -DNDEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /O2 /FS   /MD " -Xcompiler "/Fdx64\Release\vc142.pdb" -o C:\Users\faith\Documents\A_my_documents\Student\HPC\GeneticAlg\GeneticAlg\x64\Release\kernel.cu.obj "C:\Users\faith\Documents\A_my_documents\Student\HPC\GeneticAlg\GeneticAlg\kernel.cu" 
+  MSVC/cl.exe with traditional preprocessor is used. This may lead to unexpected compilation errors. Please switch to the standard conforming preprocessor by passing `/Zc:preprocessor` to cl.exe. You can define CCCL_IGNORE_MSVC_TRADITIONAL_PREPROCESSOR_WARNING to suppress this warning.
+  kernel.cu
+  tmpxft_00006140_00000000-7_kernel.cudafe1.cpp
+C:\Users\faith\Documents\A_my_documents\Student\HPC\GeneticAlg\GeneticAlg\kernel.cu(197): warning C4244: аргумент: преобразование "time_t" в "int", возможна потеря данных
+C:\Users\faith\Documents\A_my_documents\Student\HPC\GeneticAlg\GeneticAlg\kernel.cu(244): warning C4244: инициализация: преобразование "double" в "int", возможна потеря данных
+C:\Users\faith\Documents\A_my_documents\Student\HPC\GeneticAlg\GeneticAlg\kernel.cu(361): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+C:\Users\faith\Documents\A_my_documents\Student\HPC\GeneticAlg\GeneticAlg\kernel.cu(369): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+C:\Users\faith\Documents\A_my_documents\Student\HPC\GeneticAlg\GeneticAlg\kernel.cu(407): warning C4244: инициализация: преобразование "double" в "int", возможна потеря данных
+C:\Users\faith\Documents\A_my_documents\Student\HPC\GeneticAlg\GeneticAlg\kernel.cu(425): warning C4244: +=: преобразование "double" в "float", возможна потеря данных
+     Создается библиотека C:\Users\faith\Documents\A_my_documents\Student\HPC\GeneticAlg\x64\Release\GeneticAlg.lib и объект C:\Users\faith\Documents\A_my_documents\Student\HPC\GeneticAlg\x64\Release\GeneticAlg.exp
+LINK : warning LNK4098: библиотека по умолчанию "LIBCMT" конфликтует с использованием других библиотек; используйте /NODEFAULTLIB:library
+  LINK : указан параметр /LTCG, но не требуется создание кода; удалите /LTCG из командной строки компоновки для повышения производительности компоновщика
+  GeneticAlg.vcxproj -> C:\Users\faith\Documents\A_my_documents\Student\HPC\GeneticAlg\x64\Release\GeneticAlg.exe
